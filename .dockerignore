@@ -1,0 +1,8 @@
+node-modules
+DockerFile
+.dockerignore
+.git
+.gitignore
+.env
+docker-compose*
+*.http

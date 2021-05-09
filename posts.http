@@ -1,0 +1,35 @@
+
+GET http://localhost:3000/api/v1/
+
+###
+
+GET http://localhost:3000/api/v1/posts/
+
+###
+
+POST http://localhost:3000/api/v1/posts HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "My second post",
+    "body": "My second post body"
+}
+
+###
+
+PATCH  http://localhost:3000/api/v1/posts/6096986170013a0025bcb4ed HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "My first edited post",
+    "body": "My first edited post body"
+}
+
+###
+
+GET http://localhost:3000/api/v1/posts/6096986170013a0025bcb4ed
+
+
+###
+
+DELETE http://localhost:3000/api/v1/posts/6096986170013a0025bcb4ed
